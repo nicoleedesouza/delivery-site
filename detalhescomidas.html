@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Comida</title>
+  <!-- Link para o Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #5bc0de;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem;
+    }
+    header a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    header a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #5bc0de;
+    }
+    .food-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .food-image {
+      flex: 1;
+      max-width: 500px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .food-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .food-info {
+      flex: 2;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    .food-info h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .food-info p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .food-info .price {
+      font-size: 1.5rem;
+      color: #5bc0de;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .food-info .ingredients,
+    .food-info .nutrition {
+      margin-top: 2rem;
+    }
+    .food-info .ingredients ul,
+    .food-info .nutrition ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .food-info .ingredients li,
+    .food-info .nutrition li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .food-info .ingredients li i,
+    .food-info .nutrition li i {
+      color: #5bc0de;
+      margin-right: 10px;
+    }
+    .order-btn {
+      background-color: #5bc0de;
+      color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 100%;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease;
+    }
+    .order-btn:hover {
+      background-color: #31a3b4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com links -->
+  <header>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+  </header>
+
+  <div class="container">
+    <h1>Detalhes da Comida</h1>
+
+    <div class="food-details">
+      <!-- Imagem da Comida -->
+      <div class="food-image">
+        <img src="img/pampas_site.png" alt="Comida Deliciosa">
+      </div>
+
+      <!-- Informações da Comida -->
+      <div class="food-info">
+        <h2>Xis Costela</h2>
+        <p>Um delicioso xis de costela.</p>
+
+        <!-- Preço -->
+        <div class="price">R$ 34,95</div>
+
+        <!-- Ingredientes -->
+        <div class="ingredients">
+          <h3><i class="fas fa-cogs"></i> Ingredientes</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Pão de xis</li>
+            <li><i class="fas fa-check-circle"></i> Carne de costela desfiada</li>
+            <li><i class="fas fa-check-circle"></i> Queijo</li>
+            <li><i class="fas fa-check-circle"></i> Ovo</li>
+            <li><i class="fas fa-check-circle"></i> Maionese</li>
+            <li><i class="fas fa-check-circle"></i> Tomate</li>
+            <li><i class="fas fa-check-circle"></i> Alface</li>
+          </ul>
+        </div>
+
+        <!-- Botão para Pedir -->
+        <button class="order-btn">Pedir Agora</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

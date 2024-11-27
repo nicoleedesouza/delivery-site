@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Comidas</title>
+  <!-- Link para o Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #5bc0de;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem;
+    }
+    header a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    header a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #5bc0de;
+    }
+    .food-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .food-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .food-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .food-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 3px solid #5bc0de;
+    }
+    .food-card .food-info {
+      padding: 1.5rem;
+    }
+    .food-card .food-info h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .food-card .food-info p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .food-card .food-info .price {
+      font-size: 1.2rem;
+      color: #5bc0de;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .food-card .food-info .view-details {
+      display: inline-block;
+      background-color: #5bc0de;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    .food-card .food-info .view-details:hover {
+      background-color: #31a3b4;
+    }
+    .food-card .food-info .ingredients {
+      margin-top: 1.5rem;
+    }
+    .food-card .food-info .ingredients i {
+      color: #5bc0de;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com links -->
+  <header>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+  </header>
+
+  <div class="container">
+    <h1>Lista de Comidas</h1>
+
+    <div class="food-list">
+      <!-- Card de Comida 1 -->
+      <div class="food-card">
+        <img src="img/pampas_site.png" alt="Pizza Margherita">
+        <div class="food-info">
+          <h2>Xis Costela</h2>
+          <p>Um delicioso xis de costela.</p>
+          <div class="price">R$ 34,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Carne de costela desfiada</p>
+            <p><i class="fas fa-check-circle"></i> Queijo</p>
+          </div>
+          <a href="detalhescomidas.html" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- Card de Comida 2 -->
+      <div class="food-card">
+        <img src="img/download (4).jfif" alt="Sushi">
+        <div class="food-info">
+          <h2>Xis Salada</h2>
+          <p>Um delicioso xis salada.</p>
+          <div class="price">R$ 27,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Hamburguer</p>
+            <p><i class="fas fa-check-circle"></i> Presunto</p>
+          </div>
+          <a href="#" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- Card de Comida 3 -->
+      <div class="food-card">
+        <img src="img/download (5).jfif" alt="Burguer">
+        <div class="food-info">
+          <h2>Xis Vegetariano</h2>
+          <p>Um delicioso xis vegetariano.</p>
+          <div class="price">R$ 25,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Hambúrguer vegetariano</p>
+            <p><i class="fas fa-check-circle"></i> Ovo</p>
+          </div>
+          <a href="#" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- Card de Comida 4 -->
+      <div class="food-card">
+        <img src="img/download (6).jfif" alt="Spaghetti">
+        <div class="food-info">
+          <h2>Xis Frango</h2>
+          <p>Um delicioso xis frango.</p>
+          <div class="price">R$ 29,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Frango desfiado</p>
+            <p><i class="fas fa-check-circle"></i> Ovo</p>
+          </div>
+          <a href="#" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- Card de Comida 5 -->
+      <div class="food-card">
+        <img src="img/download (7).jfif" alt="Salada Caesar">
+        <div class="food-info">
+          <h2>Xis Calabresa</h2>
+          <p>Um delicioso xis de calabresa.</p>
+          <div class="price">R$ 29,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Calabresa fatiada</p>
+            <p><i class="fas fa-check-circle"></i> Queijo</p>
+          </div>
+          <a href="#" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- Card de Comida 6 -->
+      <div class="food-card">
+        <img src="img/download (3).jfif" alt="Hamburguer Vegano">
+        <div class="food-info">
+          <h2>Xis Coração</h2>
+          <p>Um delicioso xis de coração.</p>
+          <div class="price">R$ 32,95</div>
+          <div class="ingredients">
+            <p><i class="fas fa-check-circle"></i> Pão de xis</p>
+            <p><i class="fas fa-check-circle"></i> Coração frito</p>
+            <p><i class="fas fa-check-circle"></i> Queijo</p>
+          </div>
+          <a href="#" class="view-details">Ver Detalhes</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
